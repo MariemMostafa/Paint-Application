@@ -47,20 +47,6 @@ public class Circle extends Shape implements Cloneable {
 
     @Override
     public void Draw(Graphics grphcs) {
-//        int minX = Math.min(this.getX2(), this.getX1());
-//        int minY = Math.min(this.getY2(), this.getY1());
-//        int maxX = Math.max(this.getY2(), this.getY1());
-//        int maxY = Math.max(this.getY2(), this.getY1());
-//        int size = Math.min(maxX-minX,maxY-minY);
-//        if(minX<this.getX1())
-//minX= this.getX1()-size;
-//   if(minY<this.getY1())
-//minY= this.getY1()-size;
-   // if (isFilled()) {
-                  //  grphcs.drawOval(minX, minY, size, size);
-//                } else {
-//                    grphcs.drawOval(getX2(), getY2(), 2 * getRadius(), 2 * getRadius());
-//                }
         switch (checkquad(this)) {
             case 2:
                 if (isFilled()) {
